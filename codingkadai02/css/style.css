@@ -85,7 +85,6 @@ img {
 
 .container ul {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   max-width: 960px;
 }
@@ -100,14 +99,15 @@ li {
 @media screen and (max-width: 767px) {
   .container {
     display: block;
-    width: 100%;
   }
   .container ul {
     display: block;
-    width: 100%;
   }
   li {
     padding: 10px 0;
     border-bottom: solid thin;
+  }
+  li:not(:last-child) {
+    border-right: none;
   }
 }
