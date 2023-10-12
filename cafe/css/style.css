@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+
+  font-feature-settings: "palt";
+
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #4f260b;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+    "ＭＳ 明朝", serif;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+
+  /*色を消す*/
+  color: inherit;
+  transition: 0.3s;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+/* ヘッダー */
+.header_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 7% 0 3%;
+  width: 100%;
+  box-sizing: border-box;
+}
+.header_logo {
+  width: 226px;
+  background-color: transparent;
+}
+.pc_nav ul {
+  display: flex;
+  background-color: transparent;
+}
+.pc_nav ul li {
+  width: 105px;
+  margin-left: 55px;
+  text-align: center;
+  color: #fff;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+/* 全体 */
+main {
+  margin: 0 auto;
+  background-color: #e8d9bf;
+}
+
+/* リード文 */
+.lead {
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.lead_copy {
+  font-size: 30px;
+  padding-top: 100px;
+}
+.lead_maincopy {
+  font-size: 82px;
+  letter-spacing: 0.1em;
+  line-height: 1.17;
+  padding-top: 50px;
+}
+.lead_secondarycopy {
+  font-size: 23px;
+  letter-spacing: 0.1em;
+  line-height: 1.65;
+  padding: 30px 0 80px 0;
+}
+
+/* 私たちについて*/
+.about {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about_picture img {
+  border-bottom-right-radius: 83px;
+  /* width: 50%; */
+}
+.about_wrap h2 {
+  height: 55px;
+  width: 267px;
+}
+.about_heading {
+  font-size: 44px;
+  line-height: 1.38;
+  padding: 60px 0 20px 0;
+}
+.about_text {
+  max-width: 410px;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+/* メニュー */
+.menu {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 10px;
+}
+.menu h2 {
+  margin: 50px auto;
+  height: 57px;
+  width: 143px;
+}
+.menu_item {
+  display: flex;
+  justify-content: space-between;
+}
+.menu_picture img {
+  /* width: 30%; */
+  border-top-right-radius: 42px;
+}
+.menu_title {
+  font-size: 38px;
+  color: #d30202;
+  margin: -10px 10px;
+}
+.menu_text {
+  max-width: 300px;
+  font-size: 17px;
+  line-height: 1.47;
+  padding: 25px 0;
+}
+/* ギャラリー */
+.gallery h2 {
+  margin: 40px auto;
+  height: 57px;
+  width: 237px;
+}
+.gallery_picture {
+  display: flex;
+  max-width: 1920px;
+  box-sizing: border-box;
+}
+.gallery_picture img {
+  width: 1920px;
+  height: auto;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+/* イベント */
+.event {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.event h2 {
+  margin: 50px auto;
+  height: 57px;
+  width: 166px;
+}
+.event_list {
+  border: solid 3px #4f260b;
+  background-color: #fff;
+  max-width: 1000px;
+  height: 200px;
+  margin: 0 auto;
+}
+.event_text {
+  margin: 0 auto;
+  display: flex;
+  font-size: 23px;
+  line-height: 1.95;
+  background-color: #fff;
+}
+.event_text p {
+  line-height: 1.95;
+  background-color: #fff;
+  padding-left: 50px;
+}
+
+/* アクセス */
+.access h2 {
+  margin: 60px auto;
+  height: 57px;
+  width: 204px;
+}
+.access_map iframe {
+  display: block;
+  width: 100%;
+  height: 470px;
+}
+
+/* フッター */
+.footer {
+  max-width: 1000px;
+  padding-right: 10px;
+  padding-left: 10px;
+  display: flex;
+  margin: 70px auto;
+}
+.footer h2 {
+  height: 42px;
+  width: 220px;
+}
+.footer_wrap p {
+  font-size: 20px;
+  color: black;
+  padding: 0 0 10px 50px;
+  line-height: 1.95;
+}
+.copyright {
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  margin-bottom: 70px;
+}
+/* 動くボタン */
+.pagetop {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 125px;
+}
