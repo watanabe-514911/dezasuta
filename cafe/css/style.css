@@ -93,8 +93,7 @@ main {
 /* リード文 */
 .lead {
   text-align: center;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 0 10px;
 }
 .lead_copy {
   font-size: 30px;
@@ -123,9 +122,12 @@ main {
   justify-content: space-between;
   align-items: center;
 }
-.about_picture img {
+.about_pic img {
   border-bottom-right-radius: 83px;
   /* width: 50%; */
+}
+.about_wrap {
+  margin-left: 20px;
 }
 .about_wrap h2 {
   height: 55px;
@@ -153,11 +155,14 @@ main {
   height: 57px;
   width: 143px;
 }
+.menu_list + .menu_list {
+  margin-left: 30px;
+}
 .menu_item {
   display: flex;
   justify-content: space-between;
 }
-.menu_picture img {
+.menu_list img {
   /* width: 30%; */
   border-top-right-radius: 42px;
 }
@@ -178,15 +183,9 @@ main {
   height: 57px;
   width: 237px;
 }
-.gallery_picture {
+.gallery_pic {
   display: flex;
   max-width: 1920px;
-  box-sizing: border-box;
-}
-.gallery_picture img {
-  width: 1920px;
-  height: auto;
-  object-fit: cover;
   box-sizing: border-box;
 }
 
@@ -200,24 +199,26 @@ main {
   height: 57px;
   width: 166px;
 }
-.event_list {
+.event_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: solid 3px #4f260b;
   background-color: #fff;
   max-width: 1000px;
-  height: 200px;
   margin: 0 auto;
+  padding: 36px;
 }
 .event_text {
   margin: 0 auto;
   display: flex;
   font-size: 23px;
   line-height: 1.95;
-  background-color: #fff;
 }
-.event_text p {
+.event_text a {
   line-height: 1.95;
-  background-color: #fff;
   padding-left: 50px;
+  text-decoration: underline;
 }
 
 /* アクセス */
@@ -233,21 +234,21 @@ main {
 }
 
 /* フッター */
-.footer {
+footer {
   max-width: 1000px;
   padding-right: 10px;
   padding-left: 10px;
   display: flex;
   margin: 70px auto;
 }
-.footer h2 {
+.footer_logo {
   height: 42px;
   width: 220px;
 }
 .footer_wrap p {
   font-size: 20px;
   color: black;
-  padding: 0 0 10px 50px;
+  padding-left: 50px;
   line-height: 1.95;
 }
 .copyright {
