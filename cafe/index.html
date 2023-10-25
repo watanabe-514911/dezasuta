@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>デザインカフェ</title>
     <meta name="description" content="デザインカフェのサイトです">
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,11 +14,26 @@
 
     <header id="header">
         <div class="header_slider">
-            <div><img src="images/pc_first-100.jpg" alt="店内の様子"></div>
+            <div>
+                <picture>
+                    <source srcset="images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
+                    <img src="images/pc_first-100.jpg" alt="店内の様子">
+                </picture>
+            </div>
         </div>
         <div class="header_wrap">
             <h1 class="header_logo"><img src="images/design_cafe_logo_header@2x.png" alt="DESIGN CAFE"></h1>
             <nav class="pc_nav">
+                <ul>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
+                </ul>
+            </nav>
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
                 <ul>
                     <li><a href="#about">ABOUT US</a></li>
                     <li><a href="#menu">MENU</a></li>
@@ -36,6 +52,10 @@
                 1杯のコーヒーから。</p>
             <p class="lead_secondarycopy">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
                 足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
+            <p class="sp_lead">毎日を丁寧に大切に過ごしたい。<br>
+                だからこそ一杯一杯丁寧にコーヒーを入れ<br>
+                足を運んでくれるお客さんには落ち着く空間<br>
+                とこだわりのコーヒーを提供したい。</p>
         </div>
 
 
@@ -43,10 +63,14 @@
             <div class="about_pic">
                 <img src="images/pc_about-100.jpg" alt="ホットコーヒーの写真">
             </div>
+
             <div class="about_wrap">
                 <h2>
                     <img src="images/about_us@2x.png" alt="ABOUTUS">
                 </h2>
+                <div class="sp_about_pic">
+                    <img src="images/about_us@2x-100.jpg" alt="ホットコーヒーの写真">
+                </div>
                 <p class="about_heading">私たちが提供する<br>
                     こだわりのコーヒー</p>
                 <p class="about_text">
@@ -84,12 +108,14 @@
             <h2>
                 <img src="images/gallery@2x.png" alt="GALLERY">
             </h2>
-            <div class="gallery_pic">
-                <div><img src="images/pc_gallary_05-100.jpg" alt="店内の写真"></div>
-                <div><img src="images/pc_gallary_04-100.jpg" alt="コーヒー豆の写真"></div>
-                <div><img src="images/pc_gallary_03-100.jpg" alt="店内の写真"></div>
-                <div><img src="images/pc_gallary_02-100.jpg" alt="店内の写真"></div>
-                <div><img src="images/pc_gallary_01-100.jpg" alt="コーヒーの写真"></div>
+            <div class="container">
+                <div class="slider">
+                    <div class="gallery_pic"><img src="images/pc_gallary_05-100.jpg" alt="店内の写真"></div>
+                    <div class="gallery_pic"><img src="images/pc_gallary_04-100.jpg" alt="コーヒー豆の写真"></div>
+                    <div class="gallery_pic"><img src="images/pc_gallary_03-100.jpg" alt="店内の写真"></div>
+                    <div class="gallery_pic"><img src="images/pc_gallary_02-100.jpg" alt="店内の写真"></div>
+                    <div class="gallery_pic"><img src="images/pc_gallary_01-100.jpg" alt="コーヒーの写真"></div>
+                </div>
             </div>
         </section>
 
@@ -148,6 +174,21 @@
         </a>
     </div>
 
+    <script>
+        $(function () {
+            //ここの中に記述
+            $('.sp_btn, .sp_nav ul li').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open')
+            });
+        });
+        $(function () {
+            $(".slider").slick({
+                autoplay: true,
+                dots: true,
+            });
+        });
+    </script>
 </body>
 
 </html>
