@@ -509,7 +509,7 @@ footer {
     padding-right: 20px;
     padding-left: 20px;
     display: block;
-    margin: 50px auto;
+    margin: 40px auto;
   }
   .footer_logo {
     height: 50px;
@@ -517,7 +517,7 @@ footer {
   }
   .footer_wrap p {
     font-size: 18px;
-    line-height: 1.95;
+    line-height: 1.72;
     padding: 15px 0 0;
   }
   .copyright {
@@ -526,7 +526,7 @@ footer {
   /* 動くボタン */
   .pagetop {
     position: fixed;
-    right: 20px;
+    right: 15px;
     bottom: 20px;
     width: 100px;
   }
