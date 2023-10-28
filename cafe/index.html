@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>デザインカフェ</title>
     <meta name="description" content="デザインカフェのサイトです">
-    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
 
 <body>
@@ -50,12 +53,10 @@
             <p class="lead_copy">Have a happy day From a cup of coffee.</p>
             <p class="lead_maincopy">ハッピーに溢れる1日を<br>
                 1杯のコーヒーから。</p>
-            <p class="lead_secondarycopy">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
-                足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
-            <p class="sp_lead">毎日を丁寧に大切に過ごしたい。<br>
+            <p class="lead_secondarycopy">毎日を丁寧に大切に過ごしたい。<br class="sp_only">
                 だからこそ一杯一杯丁寧にコーヒーを入れ<br>
-                足を運んでくれるお客さんには落ち着く空間<br>
-                とこだわりのコーヒーを提供したい。</p>
+                足を運んでくれるお客さんには落ち着く空間と<br class="sp_only">
+                こだわりのコーヒーを提供したい。</p>
         </div>
 
 
@@ -182,6 +183,9 @@
                 $('.sp_btn').toggleClass('open')
             });
         });
+    </script>
+
+    <script src="js/main.js">
         $(function () {
             $(".slider").slick({
                 autoplay: true,
@@ -189,6 +193,7 @@
             });
         });
     </script>
+
 </body>
 
 </html>
