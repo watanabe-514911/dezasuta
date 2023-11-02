@@ -197,7 +197,7 @@ main {
   height: 30px;
   border-top: 5px solid #fff;
   border-right: 5px solid #fff;
-  left: 400px;
+  left: 20%;
   transform: rotate(-135deg);
   z-index: 1;
 }
@@ -207,7 +207,7 @@ main {
   height: 30px;
   border-top: 5px solid #fff;
   border-right: 5px solid #fff;
-  right: 400px;
+  right: 20%;
   transform: rotate(45deg);
   z-index: 1;
 }
