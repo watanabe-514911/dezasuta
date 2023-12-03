@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+
+  font-feature-settings: "palt";
+
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #333;
+  font-family: "游ゴシック体", YuGothic,
+    /* "游ゴシック Medium", "Yu Gothic Medium", */ "游ゴシック", "Yu Gothic",
+    sans-serif;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+
+  /*色を消す*/
+  color: inherit;
+  transition: 0.3s;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+/* ヘッダー */
+.header_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 7% 0 3%;
+  width: 100%;
+  box-sizing: border-box;
+}
+.header_logo {
+  width: 152px;
+}
+.header_nav ul {
+  display: flex;
+}
+.header_nav ul li {
+  width: 105px;
+  margin-left: 55px;
+  text-align: center;
+  background-color: transparent;
+  font-size: 15px;
+}
+/* 全体 */
+main {
+  margin: 0 auto;
+}
+h2 {
+  text-align: center;
+}
+
+/* メインビジュアル */
+.home_pic {
+  margin-top: 80px;
+}
+
+/* アバウト */
+.about {
+  max-width: 1000px;
+  display: flex;
+  margin: 300px auto;
+}
+.about_wrap p {
+  margin: 70px auto;
+}
+/* ワークス */
+.works_slider {
+  display: flex;
+}
+/* フッター */
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_nav ul {
+  display: flex;
+}
