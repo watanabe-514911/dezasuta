@@ -18,87 +18,97 @@
 </head>
 
 <body>
-    <header id="header">
-        <div class="header">
-            <div class="about_pic">
-                <img src="images/about.jpg" alt="赤い花の写真">
-            </div>
-        </div>
-        <div class="header_wrap">
-            <h1 class="header_logo">Chiai Watanabe<br>Portfolio</h1>
-            <nav class="header_nav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#works">Works</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header id="header" class="header">
+        <h1 class="header_logo">Chiai Watanabe<br>Portfolio</h1>
+        <nav class="header_nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- ここから -->
+
+    <div id="mainvisual">
+        <div class="about_pic">
+            <img src="images/about.jpg" alt="赤い花の写真">
+        </div>
+    </div>
 
     <main>
         <section class="aboutme">
             <h2>私について</h2>
-            <div class="aboutme_wrap">
-                <div>
+            <div class="about_container">
+                <div class="profile_pic">
                     <img src="images/about_profile.jpg" alt="渡部の写真">
                 </div>
-                <div>
-                    <small>わたなべ　ちあい</small>
-                    <h3>渡部　千愛</h3>
-                    <p>石川県の最先端、珠洲市（すずし）で生まれ育ちました。
-
-                        小さい頃から動物が大好きで高校卒業後、動物の専門学校進学のため大阪にやってきました。
-                        卒業後は動物看護士として勤務し、言葉をもたない動物たちと向き合ってきました。
-                        その後、一般企業のカスタマーサービス部に就職し、
-                        ここでもお客様の声や思いをたくさん聞いてきました。
-
-                        聞く力をつけ、次はそれを表現できるようになりたいとデザインの道に進みました。
-                        「デザインはセンスではなく知識」この言葉を大切に、目標達成に効果的なデザインで、
-                        かつおもしろみや華やかさをプラスしたデザインを作っていきたいと考えています。
-                    </p>
+                <div class="aboutme_wrap">
+                    <div>
+                        <p class="name">わたなべ　ちあい</p>
+                        <h3>渡部　千愛</h3>
+                        <p class="about_text">石川県の最先端、珠洲市（すずし）で生まれ育ちました。<br>
+                            小さい頃から動物が大好きで高校卒業後、動物の専門学校進学のため大阪にやってきました。<br>
+                            卒業後は動物看護士として勤務し、言葉をもたない動物たちと向き合ってきました。<br>
+                            その後、一般企業のカスタマーサービス部に就職し、
+                            ここでもお客様の声や思いをたくさん聞いてきました。<br>
+                            <br>
+                            聞く力をつけ、次はそれを表現できるようになりたいとデザインの道に進みました。<br>
+                            「デザインはセンスではなく知識」この言葉を大切に、目標達成に効果的なデザインで、
+                            かつおもしろみや華やかさをプラスしたデザインを作っていきたいと考えています。
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="skill">
+        <section class="skills">
             <h2>私にできること</h2>
-            <div>
-                <img src="images/about_design.png" alt="画材のイラスト">
-            </div>
-            <h3>Design</h3>
-            <p>Photoshop / Illustrato</p>
-            <p>ただキレイなだけではない、使い勝手が良く、目標を達成するためのデザインを形にします。</p>
-
-            <div>
-                <img src="images/about_coding.png" alt="パソコンのイラスト">
-                <h3>Coding</h3>
-                <p>HTML / CSS / JavaScript</p>
-                <p>シンプルでデザインに対して正確なコーディングを行います。</p>
+            <div class="skills_container">
+                <div class="design">
+                    <div>
+                        <img src="images/about_design.png" alt="画材のイラスト">
+                    </div>
+                    <p class="skills_title">Design</p>
+                    <p>Photoshop / Illustrato</p>
+                    <p class="skills_text">ただキレイなだけではない、使い勝手が良く、目標を達成するためのデザインを形にします。</p>
+                </div>
+                <div class="coding">
+                    <img src="images/about_coding.png" alt="パソコンのイラスト">
+                    <p class="skills_title">Coding</p>
+                    <p>HTML / CSS / JavaScript</p>
+                    <p class="skills_text">シンプルでデザインに対して正確なコーディングを行います。</p>
+                </div>
             </div>
         </section>
 
-        <section class="">
+        <section class="about_list">
+            <h2>私ってこんな人</h2>
             <div>
-                <h3>動物が好き</h3>
-                <p>どちらかというと猫派です。昔は犬派でしたが、就職してからは完全に猫派になりました。大型犬への憧れは今もあります。いつか飼えるといいなぁ。</p>
+                <p class="ttl">動物が好き</p>
+                <p class="about_list_text">どちらかというと猫派です。昔は犬派でしたが、就職してからは完全に猫派になりました。大型犬への憧れは今もあります。いつか飼えるといいなぁ。</p>
             </div>
             <div>
-                <h3>なんでも早めにやっちゃいたい</h3>
-                <p>宿泊予約や日程調整、自分のタスクなど、とにかく早めに終わらせたい。
+                <p class="ttl">なんでも早めにやっちゃいたい</p>
+                <p class="about_list_text">宿泊予約や日程調整、自分のタスクなど、とにかく早めに終わらせたい。
                     何かを抱えた状態が嫌なので仕事も前倒しを意識しています！</p>
             </div>
             <div>
-                <h3>聞き上手って言われます</h3>
-                <p>相手に興味があるのでたくさん質問しちゃいます。たまにスイッチが入ると私もすごく話します。「たまに聞いてるようで聞いてないよね」と言われることもあります（笑）</p>
+                <p class="ttl">聞き上手って言われます</p>
+                <p class="about_list_text">
+                    相手に興味があるのでたくさん質問しちゃいます。たまにスイッチが入ると私もすごく話します。「たまに聞いてるようで聞いてないよね」と言われることもあります（笑）</p>
             </div>
             <div>
-                <h3>アウトドアよりインドア派</h3>
-                <p>子どもの頃はキャンプに釣りなどよく外に連れて行ってもらいました。が、今ではお家大好き人間です。録画したテレビ番組を見たり、それを編集してダビングし、お気に入りのディスクを作ったりして楽しんでいます。
+                <p class="ttl">アウトドアよりインドア派</p>
+                <p class="about_list_text">
+                    子どもの頃はキャンプに釣りなどよく外に連れて行ってもらいました。が、今ではお家大好き人間です。録画したテレビ番組を見たり、それを編集してダビングし、お気に入りのディスクを作ったりして楽しんでいます。
                 </p>
             </div>
         </section>
+
+        <!-- 共通 -->
 
         <div class="message"><a href="">メッセージを送る</a></div>
         <p class="totop">
