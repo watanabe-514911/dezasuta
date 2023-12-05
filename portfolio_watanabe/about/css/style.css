@@ -1,0 +1,16 @@
+h2 {
+  font-size: 35px;
+  font-weight: 400;
+  text-align: center;
+  margin: 300px auto 100px auto;
+}
+.aboutme_wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+.aboutme_wrap p {
+  font-size: 15px;
+  line-height: 1.86;
+  margin-left: 20px;
+}
