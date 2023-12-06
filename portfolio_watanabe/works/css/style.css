@@ -1,0 +1,140 @@
+.works_pic {
+  margin-bottom: 200px;
+}
+
+.containar {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.containar li {
+  margin-bottom: 70px;
+}
+.containar p {
+  font-size: 15px;
+}
+.springsale {
+  width: 430px;
+  height: 300px;
+  background-color: #f9f9f9;
+  background-image: url(../images/mockup_springsale.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.newapp {
+  width: 430px;
+  height: 300px;
+  background-color: #f9f9f9;
+  background-image: url(../images/mockup_newapp.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.burger {
+  width: 430px;
+  height: 300px;
+  background-color: #f9f9f9;
+  background-image: url(../images/mockup_burger.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.workers {
+  width: 430px;
+  height: 300px;
+  background-color: #f9f9f9;
+  background-image: url(../images/mockup_workers.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.salon {
+  width: 430px;
+  height: 300px;
+  background-color: #f9f9f9;
+  background-image: url(../images/mockup_salon.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.skincare {
+  width: 430px;
+  height: 300px;
+  background-color: #f9f9f9;
+  background-image: url(../images/mockup_skincare.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.cafe {
+  width: 430px;
+  height: 300px;
+  background-color: #f9f9f9;
+  background-image: url(../images/mockup_cafe.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* works詳細 ページ*/
+
+.works_mockup {
+  max-width: 1000px;
+  margin: 230px auto 100px auto;
+}
+.ttl {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-size: 20px;
+  border-bottom: solid 1px;
+}
+.works_item {
+  max-width: 500px;
+  list-style: none;
+  margin: 80px auto 230px auto;
+}
+.works_item li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.works_item li span {
+  display: inline-block;
+  background: #fff;
+  padding: 20px 10px;
+  z-index: 1;
+}
+.works_item li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-top: 4px dotted #666;
+  z-index: 0;
+}
+.works_img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 260px;
+}
+.heading {
+  font-size: 18px;
+  max-width: 500px;
+  margin: 0 auto 40px auto;
+}
+.works_text {
+  max-width: 500px;
+  margin: 0 auto 200px auto;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.banner {
+  text-align: center;
+}
+
+.back {
+  max-width: 1000px;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 auto 130px auto;
+}
