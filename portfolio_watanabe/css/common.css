@@ -16,8 +16,8 @@ dt,
 dd,
 ul,
 li {
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
   line-height: 1;
 
   font-feature-settings: "palt";
@@ -86,15 +86,36 @@ main {
   margin: 0 auto;
 }
 /* フッターらへん */
-.message {
-  max-width: 1000px;
+
+.message_box {
   text-align: center;
+}
+.message_home {
+  display: inline-block;
+  max-width: 1000px;
   font-size: 16px;
-  margin: 0 auto 130px auto;
+  margin-bottom: 130px;
+  padding: 25px 70px;
+  border-style: solid;
+  border-width: 1px;
+}
+.message {
+  display: inline-block;
+  max-width: 1000px;
+  font-size: 16px;
+  margin: 270px auto 130px;
+  padding: 25px 70px;
+  border-style: solid;
+  border-width: 1px;
+}
+.totop_box {
+  text-align: center;
 }
 .totop {
-  text-align: center;
   font-size: 14px;
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #333;
 }
 footer {
   max-width: 1000px;
@@ -108,4 +129,7 @@ footer {
 .footer_nav ul li {
   font-size: 15px;
   padding-right: 65px;
+}
+.copyright {
+  font-size: 12px;
 }
