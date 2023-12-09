@@ -1,11 +1,30 @@
+/* メインビジュアル */
+
+#home {
+  background-image: url(../images/FV.jpg);
+  top: 80px;
+  width: 100vw;
+  height: 698px;
+}
+.home_img p {
+  position: relative;
+  top: 240px;
+  right: -60%;
+  font-size: 70px;
+  font-weight: 200;
+  font-family: "Lato", sans-serif;
+}
+.home_img {
+  background-size: cover;
+  background-position: center top;
+}
+
 h2 {
   font-size: 40px;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   text-align: center;
 }
-
-/* メインビジュアル */
 
 /* アバウト */
 .about {
@@ -44,3 +63,5 @@ h2 {
   margin: 65px auto 75px auto;
   line-height: 1.87;
 }
+
+/* コンタクトページ */

@@ -85,6 +85,21 @@ img {
 main {
   margin: 0 auto;
 }
+
+/* 見出し画像 */
+.top_img p {
+  position: relative;
+  top: 200px;
+  left: 28%;
+  font-size: 55px;
+  font-weight: 200;
+  font-family: "Lato", sans-serif;
+}
+.top_img {
+  background-size: cover;
+  background-position: center top;
+}
+
 /* フッターらへん */
 
 .message_box {

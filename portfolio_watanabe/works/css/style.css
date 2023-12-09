@@ -1,3 +1,10 @@
+#works {
+  background-image: url(../images/works.jpg);
+  top: 80px;
+  width: 100vw;
+  height: 450px;
+}
+
 .works_pic {
   margin-bottom: 200px;
 }
@@ -9,11 +16,15 @@
   justify-content: space-between;
   margin: 0 auto;
 }
-.containar li {
-  margin-bottom: 70px;
+.containar div {
+  margin-top: 70px;
 }
-.containar p {
+.ttl {
   font-size: 15px;
+  margin: 10px 0;
+}
+.ttl li {
+  margin-bottom: 5px;
 }
 .springsale {
   width: 430px;
@@ -78,7 +89,7 @@
   max-width: 1000px;
   margin: 230px auto 100px auto;
 }
-.ttl {
+.caption {
   max-width: 500px;
   margin: 0 auto;
   padding: 10px 0;
