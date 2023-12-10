@@ -43,34 +43,36 @@
             どんな些細なことでもかまいません。<br>
             ご連絡、心よりお待ちしております。
         </p>
+
         <div class="form">
-            <form>
+            <form
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf9Ipa7vV4ahz9yl89QE47ns8F41YKLTJ7hoWLSMEyz7ML4GA/formResponse">
                 <div>
                     <label for="name">お名前（必須）</label>
-                    <input id="name" type="text" name="name">
+                    <input id="name" type="text" name="entry.1500624604" required />
                 </div>
                 <div>
-                    <label for="email">メールアドレアス（必須）</label>
-                    <input id="email" type="text" name="name">
+                    <label for="email">メールアドレス（必須）</label>
+                    <input id="email" type="email" name="entry.800319238">
                 </div>
                 <div>
                     <label for="msg">メッセージ</label>
-                    <textarea id="msg" name="name"></textarea>
+                    <textarea id="msg" name="entry.489551247" maxlength="2000"></textarea>
+                </div>
+                <p>
+                    送信内容の確認画面はありません。<br>
+                    内容をご確認の上送信してください。
+                </p>
+                <div class="message_box">
+                    <button class="contact_message" type="submit" onclick="location.href='サンクスページ'">送信する</button>
                 </div>
             </form>
 
-            <p>
-                送信内容の確認画面はありません。<br>
-                内容をご確認の上送信してください。
-            </p>
         </div>
 
 
         <!-- 共通 -->
 
-        <div class="message_box">
-            <div class="contact_message"><a href="">送信する</a></div>
-        </div>
 
         <div class="totop_box">
             <p class="totop">
