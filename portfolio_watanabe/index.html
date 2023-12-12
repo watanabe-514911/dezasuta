@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chiai Watanabe Portfolio</title>
-    <meta name="description" content="渡部千愛ポートフォリオ">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <title>Home | Chiai Watanabe Portfolio</title>
+    <meta name="description" content="わたなべちあいのポートフォリアオサイトです。Webデザインやコーディングで
+    あなたの想いに彩りを加え、かつ目標達成に効果的な作品を作っていきたいと考えています。">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <!-- JQery読み込み -->
     <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -20,23 +21,22 @@
 
 <body>
     <header id="header" class="header">
-        <h1 class="header_logo">Chiai Watanabe<br>Portfolio</h1>
+        <h1 class="header_logo"><a href="./index.html">Chiai Watanabe<br>Portfolio</a></h1>
         <nav class="header_nav">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about/index.html">About</a></li>
+                <li><a href="./works/index.html">Works</a></li>
+                <li><a href="./contact/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div id="home" class="home_img">
-        <p>Chiai<br>Watanabe<br>Portfolio</p>
-    </div>
-
-
     <main>
+        <div id="home" class="home_img">
+            <p>Chiai<br>Watanabe<br>Portfolio</p>
+        </div>
+
         <section class="about">
             <div class="about_wrap">
                 <h2>About</h2>
@@ -45,13 +45,13 @@
                     彩りとは、おもしろみや風情、華やかさを付け加えること。<br>
                     私はデザインで、あなたの想いに彩りをプラスします。
                 </p>
-                <a href="">もっと見る</a>
+                <div class="more"><a href="./about/index.html">もっと見る</a></div>
             </div>
             <div><img src="images/home_aboutpic.jpg" alt="花束を持った写真"></div>
         </section>
 
         <section class="works">
-            <h2>Worcs</h2>
+            <h2>Works</h2>
             <div class="works_slider">
                 <div><img src="images/mockup_burger.png" alt="ハンバーガーバナー"></div>
                 <div><img src="images/mockup_salon.png" alt="美容室LP"></div>
@@ -62,6 +62,7 @@
                 <div><img src="images/mockup_cafe.png" alt="カフェLP"></div>
             </div>
         </section>
+
         <section class="contact">
             <h2>Contact</h2>
             <p>「制作に関するお問合せ」から「お友達になりませんか？」のご挨拶まで<br>
@@ -71,28 +72,28 @@
 
         <!-- 共通 -->
         <div class="message_box">
-            <div class="message_home"><a href="">メッセージを送る</a></div>
+            <div class="message_home"><a href="./contact/contact.html">メッセージを送る</a></div>
         </div>
 
         <div class="totop_box">
             <p class="totop">
-                <a href="">Top</a>
+                <a href="#header">Top</a>
             </p>
         </div>
-        <footer>
-            <nav class="footer_nav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#works">Works</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <p class="copyright">
-                <small>©ChiaiWatanabe All rights reserved.</small>
-            </p>
-        </footer>
     </main>
+    <footer>
+        <nav class="footer_nav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about/index.html">About</a></li>
+                <li><a href="./works/index.html">Works</a></li>
+                <li><a href="./contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">
+            <small>©ChiaiWatanabe All rights reserved.</small>
+        </p>
+    </footer>
 
 
 

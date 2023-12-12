@@ -1,7 +1,6 @@
 #contact {
+  position: relative;
   background-image: url(../images/contact.jpg);
-  top: 80px;
-  width: 100vw;
   height: 450px;
 }
 .contact_text {

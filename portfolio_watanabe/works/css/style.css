@@ -1,7 +1,6 @@
 #works {
+  position: relative;
   background-image: url(../images/works.jpg);
-  top: 80px;
-  width: 100vw;
   height: 450px;
 }
 
@@ -10,77 +9,190 @@
 }
 
 .containar {
-  max-width: 1000px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .containar div {
-  margin-top: 70px;
+  margin-top: 180px;
 }
 .ttl {
-  font-size: 15px;
   margin: 10px 0;
+  font-size: 15px;
 }
 .ttl li {
   margin-bottom: 5px;
 }
-.springsale {
-  width: 430px;
-  height: 300px;
-  background-color: #f9f9f9;
-  background-image: url(../images/mockup_springsale.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-.newapp {
-  width: 430px;
-  height: 300px;
-  background-color: #f9f9f9;
-  background-image: url(../images/mockup_newapp.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-.burger {
-  width: 430px;
-  height: 300px;
-  background-color: #f9f9f9;
-  background-image: url(../images/mockup_burger.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-.workers {
-  width: 430px;
-  height: 300px;
-  background-color: #f9f9f9;
-  background-image: url(../images/mockup_workers.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-.salon {
-  width: 430px;
-  height: 300px;
-  background-color: #f9f9f9;
-  background-image: url(../images/mockup_salon.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-.skincare {
-  width: 430px;
-  height: 300px;
-  background-color: #f9f9f9;
-  background-image: url(../images/mockup_skincare.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
+.springsale,
+.newapp,
+.burger,
+.workers,
+.salon,
+.skincare,
 .cafe {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 430px;
   height: 300px;
   background-color: #f9f9f9;
-  background-image: url(../images/mockup_cafe.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+}
+.springsale::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 90%;
+  opacity: 0;
+  transition: 1s;
+}
+.springsale:hover::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: #f4e9eb;
+  opacity: 1;
+}
+.newapp::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 90%;
+  opacity: 0;
+  transition: 1s;
+}
+.newapp:hover::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: #eae4dc;
+  opacity: 1;
+}
+.burger::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 90%;
+  opacity: 0;
+  transition: 1s;
+}
+.burger:hover::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: #cccccc;
+  opacity: 1;
+}
+.workers::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 90%;
+  opacity: 0;
+  transition: 1s;
+}
+.workers:hover::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: #f9e7af;
+  opacity: 1;
+}
+.salon::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 90%;
+  opacity: 0;
+  transition: 1s;
+}
+.salon:hover::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: #e5dcda;
+  opacity: 1;
+}
+.skincare::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 90%;
+  opacity: 0;
+  transition: 1s;
+}
+.skincare:hover::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: #e9e9f2;
+  opacity: 1;
+}
+.cafe::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 1s;
+}
+.cafe:hover::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: #fff5e9;
+  opacity: 1;
+}
+.springsale a {
+  z-index: 1;
+}
+.newapp a {
+  z-index: 1;
+}
+.burger a {
+  z-index: 1;
+}
+.workers a {
+  z-index: 1;
+}
+.salon a {
+  z-index: 1;
+}
+.skincare a {
+  z-index: 1;
+}
+.cafe a {
+  z-index: 1;
 }
 
 /* works詳細 ページ*/

@@ -1,28 +1,27 @@
 #about {
+  position: relative;
   background-image: url(../images/about.jpg);
-  top: 80px;
-  width: 100vw;
   height: 450px;
 }
 
 .about_heading {
   text-align: center;
-  margin: 300px 0 100px 0;
+  margin: 300px 0 100px;
 }
 .about_heading h2 {
+  display: inline-block;
+  padding: 0 20px 10px;
   font-size: 35px;
   font-weight: 200;
-  display: inline-block;
   border-bottom: 1px solid;
-  padding: 0 20px;
 }
 .profile_pic {
   width: 50%;
 }
 .about_container {
+  display: flex;
   max-width: 1000px;
   margin: 0 auto;
-  display: flex;
 }
 .aboutme_wrap {
   max-width: 510px;
@@ -38,23 +37,23 @@
   top: -20px;
   left: -40px;
 }
-ruby {
+.myname {
   position: absolute;
   font-size: 23px;
 }
 .about_text {
   position: relative;
   top: 70px;
+  margin-left: 20px;
   font-size: 15px;
   line-height: 1.86;
-  margin-left: 20px;
 }
 
 /* 私にできること */
 .skills_container {
-  max-width: 610px;
   display: flex;
   justify-content: space-between;
+  max-width: 610px;
   margin: 0 auto;
 }
 .design,
@@ -65,31 +64,31 @@ ruby {
 .coding img {
   max-width: 200px;
 }
-.design p,
-.coding p {
-  font-size: 17px;
-}
 .skills_title {
   position: relative;
-  margin: 60px 0 30px 0;
+  margin: 60px 0 30px;
 }
 .objdesign {
-  position: absolute;
   left: 30px;
   top: -10px;
 }
-.skills_title p {
+.skills_title P {
   position: absolute;
+  margin: 0 auto;
+  text-align: center;
   font-size: 23px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
+}
+.tool {
+  font-size: 17px;
 }
 .skills_text {
   margin: 30px 0;
 }
 .skills_text p {
-  font-size: 15px;
   max-width: 220px;
+  font-size: 15px;
   line-height: 1.86;
 }
 /* 私ってこんな人 */
@@ -102,7 +101,7 @@ ruby {
   font-size: 23px;
 }
 .about_list_text {
-  font-size: 15px;
   margin: 15px 0 80px 0;
+  font-size: 15px;
   line-height: 1.86;
 }

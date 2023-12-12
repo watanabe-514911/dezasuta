@@ -1,36 +1,35 @@
 /* メインビジュアル */
 
 #home {
+  position: relative;
   background-image: url(../images/FV.jpg);
-  top: 80px;
-  width: 100vw;
   height: 698px;
 }
+.home_img {
+  background-size: cover;
+  background-position: center;
+}
 .home_img p {
-  position: relative;
+  position: absolute;
   top: 240px;
-  right: -60%;
+  left: 60%;
   font-size: 70px;
   font-weight: 200;
   font-family: "Lato", sans-serif;
 }
-.home_img {
-  background-size: cover;
-  background-position: center top;
-}
-
 h2 {
-  font-size: 40px;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
+  margin-top: 20px;
   text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
 }
 
 /* アバウト */
 .about {
-  max-width: 920px;
   display: flex;
   justify-content: space-between;
+  max-width: 920px;
   margin: 300px auto;
 }
 .about_wrap {
@@ -38,9 +37,16 @@ h2 {
   font-size: 16px;
 }
 .about_wrap p {
-  margin: 70px auto;
+  margin: 60px auto;
   padding: 0 10px;
   line-height: 2.18;
+}
+.more {
+  /* display: inline-block; */
+  text-align: right;
+  padding: 16px 55px;
+  border-style: solid;
+  border-width: 1px;
 }
 /* ワークス */
 .works h2 {
@@ -54,9 +60,9 @@ h2 {
 }
 /* コンタクト */
 .contact {
+  text-align: center;
   max-width: 1000px;
   margin: 250px auto 80px auto;
-  text-align: center;
   font-size: 16px;
 }
 .contact p {
