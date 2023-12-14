@@ -3,7 +3,9 @@
   background-image: url(../images/about.jpg);
   height: 450px;
 }
-
+.about {
+  margin: 0 20px;
+}
 .about_heading {
   text-align: center;
   margin: 300px 0 100px;

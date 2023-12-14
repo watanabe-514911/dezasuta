@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Chiai Watanabe Portfolio</title>
-    <meta name="description" content="わたなべちあいのポートフォリアオサイトです。Webデザインやコーディングで
+    <meta name="description" content="わたなべちあいのポートフォリオサイトです。Webデザインやコーディングで
     あなたの想いに彩りを加え、かつ目標達成に効果的な作品を作っていきたいと考えています。">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css"
@@ -30,10 +30,25 @@
                 <li><a href="./contact/contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div class="sp_btn"><span></span></div>
+
+        <nav class="sp_header_nav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about/index.html">About</a></li>
+                <li><a href="./works/index.html">Works</a></li>
+                <li><a href="./contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <div id="home" class="home_img">
+            <p>Chiai<br>Watanabe<br>Portfolio</p>
+        </div>
+
+        <div id="sp_home">
+            <div><img src="images/FV@2x.jpg" alt="花束を持った女性の写真"></div>
             <p>Chiai<br>Watanabe<br>Portfolio</p>
         </div>
 
@@ -94,6 +109,16 @@
             <small>©ChiaiWatanabe All rights reserved.</small>
         </p>
     </footer>
+
+    <script>
+        $(function () {
+            //ここの中に記述
+            $('.sp_btn, .sp_nav ul li').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open')
+            });
+        });
+    </script>
 
 
 

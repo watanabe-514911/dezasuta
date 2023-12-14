@@ -13,10 +13,31 @@
   position: absolute;
   top: 240px;
   left: 60%;
+  font-family: "Lato", sans-serif;
   font-size: 70px;
   font-weight: 200;
-  font-family: "Lato", sans-serif;
 }
+#sp_home {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  #home {
+    display: none;
+  }
+  #sp_home {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  #sp_home p {
+    margin: 30px auto;
+    font-family: "Lato", sans-serif;
+    font-size: 45px;
+    font-weight: 200;
+  }
+}
+
+/* アバウト */
 h2 {
   margin-top: 20px;
   text-align: center;
@@ -24,8 +45,6 @@ h2 {
   font-size: 40px;
   font-weight: 300;
 }
-
-/* アバウト */
 .about {
   display: flex;
   justify-content: space-between;
@@ -34,6 +53,7 @@ h2 {
 }
 .about_wrap {
   max-width: 450px;
+  margin-left: 20px;
   font-size: 16px;
 }
 .about_wrap p {
@@ -68,6 +88,9 @@ h2 {
 .contact p {
   margin: 65px auto 75px auto;
   line-height: 1.87;
+}
+.message_home:hover {
+  opacity: 0.5;
 }
 
 /* コンタクトページ */
