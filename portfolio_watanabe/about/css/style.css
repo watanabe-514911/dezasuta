@@ -6,6 +6,19 @@
 .about {
   margin: 0 20px;
 }
+#sp_about {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  #about {
+    display: none;
+  }
+  #sp_about {
+    display: block;
+    width: 100%;
+  }
+}
+
 .about_heading {
   text-align: center;
   margin: 300px 0 100px;
@@ -22,14 +35,14 @@
 }
 .about_container {
   display: flex;
+  justify-content: space-between;
   max-width: 1000px;
   margin: 0 auto;
 }
-.aboutme_wrap {
-  max-width: 510px;
-}
+
 .name {
   position: relative;
+  max-width: 315px;
   margin: 30px 20px;
 }
 .circle {
@@ -45,17 +58,44 @@
 }
 .about_text {
   position: relative;
+  width: 50%;
   top: 70px;
   margin-left: 20px;
   font-size: 15px;
   line-height: 1.86;
+}
+@media screen and (max-width: 767px) {
+  .about_heading h2 {
+    font-size: 22px;
+  }
+  .about_heading {
+    margin: 150px 0 70px;
+  }
+  .about_container {
+    display: block;
+    max-width: 315px;
+    margin: 0 auto;
+  }
+  .profile_pic {
+    width: 100%;
+  }
+  .name {
+    margin: 10px 0;
+  }
+  .aboutme_wrap {
+    margin: 0 auto;
+  }
+  .about_text {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 /* 私にできること */
 .skills_container {
   display: flex;
   justify-content: space-between;
-  max-width: 610px;
+  max-width: 61%;
   margin: 0 auto;
 }
 .design,
@@ -93,6 +133,29 @@
   font-size: 15px;
   line-height: 1.86;
 }
+@media screen and (max-width: 767px) {
+  .skills_container {
+    display: block;
+    max-width: 315px;
+    margin: 0 auto;
+  }
+  .design img,
+  .coding img {
+    max-width: 160px;
+  }
+  .skills_title {
+    margin: 30px 0 20px;
+  }
+  .skills_title p {
+    font-size: 20px;
+  }
+  .skills_text p {
+    margin: 0 auto;
+  }
+  .design {
+    margin-bottom: 80px;
+  }
+}
 /* 私ってこんな人 */
 .about_list {
   max-width: 500px;
@@ -103,7 +166,18 @@
   font-size: 23px;
 }
 .about_list_text {
-  margin: 15px 0 80px 0;
+  margin: 15px 0 80px;
   font-size: 15px;
   line-height: 1.86;
+}
+@media screen and (max-width: 767px) {
+  .about_list {
+    max-width: 315px;
+  }
+  .ttl {
+    font-size: 20px;
+  }
+  .about_list_text {
+    margin: 20px 0 60px;
+  }
 }

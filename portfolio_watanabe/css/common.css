@@ -43,10 +43,6 @@ ul {
   list-style: none;
 }
 
-/* a:hover {
-  opacity: 0.5;
-} */
-
 img {
   max-width: 100%;
   vertical-align: bottom;
@@ -73,21 +69,21 @@ img {
   font-size: 20px;
   line-height: 1.2;
 }
-.header_nav ul {
+.pc_nav ul {
   display: flex;
   margin-right: 20px;
 }
-.header_nav ul li {
+.pc_nav ul li {
   padding-left: 55px;
   text-align: center;
   background-color: transparent;
   font-size: 15px;
 }
 /* ヘッダーホバーアニメーション */
-.header_nav ul li a {
+.pc_nav ul li a {
   position: relative;
 }
-.header_nav ul li a::after {
+.pc_nav ul li a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -99,14 +95,17 @@ img {
   transform: scale(0, 1);
   transform-origin: left top;
 }
-.header_nav ul li a:hover::after {
+.pc_nav ul li a:hover::after {
   transform: scale(1, 1);
 }
-.sp_header_nav {
+.sp_btn {
+  display: none;
+}
+.sp_nav {
   display: none;
 }
 @media screen and (max-width: 767px) {
-  .header_nav {
+  .pc_nav {
     display: none;
   }
   .sp_btn {
@@ -161,26 +160,27 @@ img {
   }
 
   /* ハンバーガーメニュー */
-  .sp_header_nav {
+  .sp_nav {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(255, 255, 255, 0.88);
     z-index: 1;
   }
-  .sp_header_nav ul {
+  .sp_nav ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
   }
-  .sp_header_nav ul li {
+  .sp_nav ul li {
     padding: 20px 0;
     color: #333;
     font-size: 18px;
+    line-height: 5.5;
     font-family: "Lato", sans-serif;
   }
 }
@@ -213,7 +213,7 @@ main {
   display: inline-block;
   max-width: 1000px;
   margin-bottom: 130px;
-  padding: 25px 70px;
+  padding: 16px 55px;
   border-style: solid;
   border-width: 1px;
   font-size: 16px;
@@ -222,7 +222,7 @@ main {
   display: inline-block;
   max-width: 1000px;
   margin: 270px 0 130px;
-  padding: 25px 70px;
+  padding: 18px 50px;
   border-style: solid;
   border-width: 1px;
   font-size: 16px;
@@ -260,4 +260,25 @@ footer {
 }
 .copyright {
   font-size: 12px;
+}
+@media screen and (max-width: 767px) {
+  .totop_box {
+    display: none;
+  }
+  footer {
+    display: block;
+    text-align: center;
+    max-width: 315px;
+    margin-top: 50px;
+  }
+  .footer_nav ul {
+    display: block;
+  }
+  .footer_nav ul li {
+    line-height: 3;
+    padding: 0;
+  }
+  .copyright {
+    margin-top: 50px;
+  }
 }

@@ -7,6 +7,18 @@
 .works_pic {
   margin-bottom: 200px;
 }
+#sp_works {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  #works {
+    display: none;
+  }
+  #sp_works {
+    display: block;
+    width: 100%;
+  }
+}
 
 .containar {
   display: flex;
