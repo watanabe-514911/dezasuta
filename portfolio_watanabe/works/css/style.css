@@ -36,6 +36,7 @@
 }
 .ttl li {
   margin-bottom: 5px;
+  margin-left: 20px;
 }
 .springsale,
 .newapp,
@@ -48,6 +49,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 20px;
   width: 430px;
   height: 300px;
   background-color: #f9f9f9;
@@ -71,6 +73,9 @@
   background-color: #f4e9eb;
   opacity: 1;
 }
+.springsale a {
+  z-index: 1;
+}
 .newapp::before {
   content: "";
   position: absolute;
@@ -89,6 +94,9 @@
   border-radius: 0;
   background-color: #eae4dc;
   opacity: 1;
+}
+.newapp a {
+  z-index: 1;
 }
 .burger::before {
   content: "";
@@ -109,6 +117,9 @@
   background-color: #cccccc;
   opacity: 1;
 }
+.burger a {
+  z-index: 1;
+}
 .workers::before {
   content: "";
   position: absolute;
@@ -127,6 +138,9 @@
   border-radius: 0;
   background-color: #f9e7af;
   opacity: 1;
+}
+.workers a {
+  z-index: 1;
 }
 .salon::before {
   content: "";
@@ -147,6 +161,9 @@
   background-color: #e5dcda;
   opacity: 1;
 }
+.salon a {
+  z-index: 1;
+}
 .skincare::before {
   content: "";
   position: absolute;
@@ -165,6 +182,9 @@
   border-radius: 0;
   background-color: #e9e9f2;
   opacity: 1;
+}
+.skincare a {
+  z-index: 1;
 }
 .cafe::before {
   content: "";
@@ -185,33 +205,186 @@
   background-color: #fff5e9;
   opacity: 1;
 }
-.springsale a {
-  z-index: 1;
-}
-.newapp a {
-  z-index: 1;
-}
-.burger a {
-  z-index: 1;
-}
-.workers a {
-  z-index: 1;
-}
-.salon a {
-  z-index: 1;
-}
-.skincare a {
-  z-index: 1;
-}
 .cafe a {
   z-index: 1;
 }
-
+.sp_containar {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .containar {
+    display: none;
+  }
+  .sp_containar {
+    display: block;
+    max-width: 315px;
+    margin: 150px auto 0;
+  }
+  .sp_ttl {
+    text-align: center;
+    margin: 20px 0 70px;
+    font-size: 15px;
+  }
+  .sp_springsale img {
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .sp_springsale {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 315px;
+    height: 200px;
+    background-color: #f4e9eb;
+  }
+  .sp_springsale::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .sp_springsale a {
+    z-index: 1;
+  }
+  .sp_newapp img {
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .sp_newapp {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 315px;
+    height: 200px;
+    background-color: #eae4dc;
+  }
+  .sp_newapp::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .sp_newapp a {
+    z-index: 1;
+  }
+  .sp_burger img {
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .sp_burger {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 315px;
+    height: 200px;
+    background-color: #cccccc;
+  }
+  .sp_burger::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .sp_burger a {
+    z-index: 1;
+  }
+  .sp_workers img {
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .sp_workers {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 315px;
+    height: 200px;
+    background-color: #f9e7af;
+  }
+  .sp_workers::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .sp_workers a {
+    z-index: 1;
+  }
+  .sp_salon img {
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .sp_salon {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 315px;
+    height: 200px;
+    background-color: #e5dcda;
+  }
+  .sp_salon::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .sp_salon a {
+    z-index: 1;
+  }
+  .sp_skincare img {
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .sp_skincare {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 315px;
+    height: 200px;
+    background-color: #e9e9f2;
+  }
+  .sp_skincare::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .sp_skincare a {
+    z-index: 1;
+  }
+  .sp_cafe img {
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .sp_cafe {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 315px;
+    height: 200px;
+    background-color: #fff5e9;
+  }
+  .sp_cafe::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .sp_cafe a {
+    z-index: 1;
+  }
+}
 /* works詳細 ページ*/
 
 .works_mockup {
   max-width: 1000px;
-  margin: 230px auto 100px auto;
+  margin: 230px auto 100px;
 }
 .caption {
   max-width: 500px;
@@ -223,12 +396,14 @@
 .works_item {
   max-width: 500px;
   list-style: none;
-  margin: 80px auto 230px auto;
+  margin: 80px auto 230px;
+  font-size: 16px;
 }
 .works_item li {
   position: relative;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 .works_item li span {
   display: inline-block;
@@ -255,13 +430,18 @@
 .heading {
   font-size: 18px;
   max-width: 500px;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 40px;
 }
 .works_text {
   max-width: 500px;
-  margin: 0 auto 200px auto;
+  margin: 0 auto 200px;
   font-size: 15px;
   line-height: 1.6;
+}
+.works_text span {
+  display: block;
+  max-width: 500px;
+  border-bottom: solid 1px;
 }
 .column {
   text-align: center;
@@ -272,6 +452,33 @@
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 767px) {
+  .works_mockup {
+    max-width: 315px;
+    margin: 150px auto 80px;
+  }
+  .caption {
+    max-width: 315px;
+  }
+  .works_item {
+    margin: 50px auto 150px;
+  }
+  .works_item li {
+    max-width: 315px;
+    font-size: 14px;
+  }
+  .heading {
+    max-width: 315px;
+  }
+  .works_text {
+    max-width: 315px;
+  }
+  .works_text span {
+    display: block;
+    max-width: 315px;
+    border-bottom: solid 1px;
+  }
+}
 .back_box {
   text-align: center;
 }
@@ -280,7 +487,7 @@
   max-width: 1000px;
   font-size: 16px;
   margin: 270px auto 130px;
-  padding: 25px 100px;
+  padding: 16px 55px;
   border-style: solid;
   border-width: 1px;
 }
