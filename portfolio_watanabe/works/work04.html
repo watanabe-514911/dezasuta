@@ -71,16 +71,17 @@
             <div><img src="images/workers_sp.jpg" alt="コワーキングスペースLP"> </div>
         </div>
 
-        <dl class="sp_row">
-            <dt>パソコン表示用のデザインを見る</dt>
-            <dd>
-                <div><img src="images/workers_pc.jpg" alt="コワーキングスペースLP"></div>
-            </dd>
-            <dt>スマホ表示用のデザインを見る</dt>
-            <dd>
-                <div><img src="images/workers_sp.jpg" alt="コワーキングスペースLP"> </div>
-            </dd>
-        </dl>
+        <ul class="accordion-area">
+            <li>
+                <p class="title">パソコン表示用のデザインを見る</p>
+                <div class="box"><img src="images/workers_pc.jpg" alt="コワーキングスペースLP"></div>
+
+            </li>
+            <li>
+                <p class="title">スマホ示用のデザインを見る</p>
+                <div class="box"><img src="images/workers_sp.jpg" alt="コワーキングスペースLP"></div>
+            </li>
+        </ul>
 
 
         <!-- 共通 -->
@@ -119,11 +120,25 @@
                 $('.sp_btn').toggleClass('open')
             });
 
-            $('sp_row').on('click', function () {
+            $('dl').on('click', function () {
                 $(this).toggleClass('is-open');
                 $(this).next().slideToggle();
                 $(this).parent().toggleClass('is-wide');
             });
+        });
+
+        $('.title').on('click', function () {//タイトル要素をクリックしたら
+            $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
+
+            var findElm = $(this).next(".box");//タイトル直後のアコーディオンを行うエリアを取得
+
+            if ($(this).hasClass('close')) {//タイトル要素にクラス名closeがあれば
+                $(this).removeClass('close');//クラス名を除去    
+            } else {//それ以外は
+                $('.close').removeClass('close'); //クラス名closeを全て除去した後
+                $(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し
+                $(findElm).slideDown(500);//アコーディオンを開く
+            }
         });
     </script>
 </body>
