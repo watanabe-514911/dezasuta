@@ -381,7 +381,6 @@
   }
 }
 /* works詳細 ページ*/
-
 .works_mockup {
   max-width: 1000px;
   margin: 230px auto 100px;
@@ -452,6 +451,9 @@
   display: flex;
   justify-content: space-between;
 }
+.sp_row {
+  display: none;
+}
 @media screen and (max-width: 767px) {
   .works_mockup {
     max-width: 315px;
@@ -477,6 +479,36 @@
     display: block;
     max-width: 315px;
     border-bottom: solid 1px;
+  }
+  .sp_row {
+    border: 1px solid #000;
+    margin: 40px;
+    transition: 0.3s;
+  }
+  .sp_row.is-wide {
+    margin: 40px 0;
+  }
+  .sp_row dt {
+    position: relative;
+    padding: 20px 40px 20px 20px;
+  }
+  .sp_row dt:not(:first-child) {
+    border-top: 1px solid #333;
+  }
+  .sp_row dt::before {
+    content: "＋";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: 0.3s;
+  }
+  .sp_row dt.is-open::before {
+    content: "ー";
+  }
+  .sp_row dd {
+    display: none;
+    padding: 0 40px 20px 20px;
+    margin: 0;
   }
 }
 .back_box {

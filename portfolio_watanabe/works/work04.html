@@ -71,6 +71,17 @@
             <div><img src="images/workers_sp.jpg" alt="コワーキングスペースLP"> </div>
         </div>
 
+        <dl class="sp_row">
+            <dt>パソコン表示用のデザインを見る</dt>
+            <dd>
+                <div><img src="images/workers_pc.jpg" alt="コワーキングスペースLP"></div>
+            </dd>
+            <dt>スマホ表示用のデザインを見る</dt>
+            <dd>
+                <div><img src="images/workers_sp.jpg" alt="コワーキングスペースLP"> </div>
+            </dd>
+        </dl>
+
 
         <!-- 共通 -->
 
@@ -99,6 +110,22 @@
             <small>©ChiaiWatanabe All rights reserved.</small>
         </p>
     </footer>
+
+    <script>
+        $(function () {
+            //ここの中に記述
+            $('.sp_btn, .sp_nav ul li').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open')
+            });
+
+            $('sp_row').on('click', function () {
+                $(this).toggleClass('is-open');
+                $(this).next().slideToggle();
+                $(this).parent().toggleClass('is-wide');
+            });
+        });
+    </script>
 </body>
 
 </html>

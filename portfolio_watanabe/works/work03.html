@@ -113,6 +113,16 @@
             <small>©ChiaiWatanabe All rights reserved.</small>
         </p>
     </footer>
+
+    <script>
+        $(function () {
+            //ここの中に記述
+            $('.sp_btn, .sp_nav ul li').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open')
+            });
+        });
+    </script>
 </body>
 
 </html>

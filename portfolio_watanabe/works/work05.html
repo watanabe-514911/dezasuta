@@ -22,7 +22,17 @@
 <body>
     <header id="header" class="header">
         <h1 class="header_logo"><a href="../index.html">Chiai Watanabe<br>Portfolio</a></h1>
-        <nav class="header_nav">
+        <nav class="pc_nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="./index.html">Works</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="sp_btn"><span></span></div>
+
+        <nav class="sp_nav">
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../about/index.html">About</a></li>
@@ -37,6 +47,10 @@
     <main>
         <div id="works" class="top_img">
             <p>Works</p>
+        </div>
+
+        <div id="sp_works">
+            <img src="images/sp_works@2x.jpg" alt="青い花の写真">
         </div>
 
         <div class="works_mockup">
@@ -91,6 +105,16 @@
         </nav>
         <p class="copyright">©ChiaiWatanabe All rights reserved.</p>
     </footer>
+
+    <script>
+        $(function () {
+            //ここの中に記述
+            $('.sp_btn, .sp_nav ul li').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open')
+            });
+        });
+    </script>
 </body>
 
 </html>
