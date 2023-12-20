@@ -22,7 +22,17 @@
 <body>
     <header id="header" class="header">
         <h1 class="header_logo"><a href="../index.html">Chiai Watanabe<br>Portfolio</a></h1>
-        <nav class="header_nav">
+        <nav class="pc_nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="./index.html">Works</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="sp_btn"><span></span></div>
+
+        <nav class="sp_nav">
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../about/index.html">About</a></li>
@@ -57,18 +67,23 @@
             <div><img src="images/cafe_sp.jpg" alt="Cafeサイト SP版"> </div>
         </div>
 
+        <ul class="accordion-area">
+            <li>
+                <p class="title">パソコン表示用のデザインを見る</p>
+                <div class="box"><img src="images/cafe_pc.jpg" alt="Cafeサイト PC版"></div>
+            </li>
+            <li>
+                <p class="title">スマホ示用のデザインを見る</p>
+                <div class="box"><img src="images/cafe_sp.jpg" alt="Cafeサイト SP版"></div>
+            </li>
+        </ul>
+
 
         <!-- 共通 -->
 
-        <div class="back_box">
-            <div class="back"><a href="./index.html">一覧に戻る</a></div>
-        </div>
+        <a class="back" href="./index.html">一覧に戻る</a>
 
-        <div class="totop_box">
-            <p class="totop">
-                <a href="#header">Top</a>
-            </p>
-        </div>
+        <div class="totop"><a href="#header">Top</a></div>
     </main>
     <footer>
         <nav class="footer_nav">
@@ -91,6 +106,20 @@
                 $('.sp_nav').fadeToggle();
                 $('.sp_btn').toggleClass('open')
             });
+        });
+
+        $('.title').on('click', function () {//タイトル要素をクリックしたら
+            $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
+
+            var findElm = $(this).next(".box");//タイトル直後のアコーディオンを行うエリアを取得
+
+            if ($(this).hasClass('close')) {//タイトル要素にクラス名closeがあれば
+                $(this).removeClass('close');//クラス名を除去    
+            } else {//それ以外は
+                $('.close').removeClass('close'); //クラス名closeを全て除去した後
+                $(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し
+                $(findElm).slideDown(500);//アコーディオンを開く
+            }
         });
     </script>
 </body>
