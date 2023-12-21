@@ -24,9 +24,7 @@ li {
 
   /*デフォルトの文字色、font-familyを予め当てておく*/
   color: #333;
-  font-family: "游ゴシック体", YuGothic,
-    /* "游ゴシック Medium", "Yu Gothic Medium", */ "游ゴシック", "Yu Gothic",
-    sans-serif;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 a {
@@ -177,7 +175,6 @@ img {
     height: 100%;
   }
   .sp_nav ul li {
-    padding: 20px 0;
     color: #333;
     font-size: 18px;
     line-height: 5.5;
@@ -205,23 +202,23 @@ main {
 }
 
 /* フッターらへん */
-.message_home {
-  display: block;
-  text-align: center;
-  margin: 0 auto 130px;
-  padding: 16px 0;
-  width: 200px;
-  border: 1px solid;
-  font-size: 16px;
+.btnmessage {
+  position: relative;
 }
 .message {
   display: block;
   text-align: center;
+  position: relative;
   margin: 270px auto 130px;
   padding: 16px 0;
   width: 200px;
   border: 1px solid;
   font-size: 16px;
+}
+.btnmessage img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 .message:hover {
   opacity: 0.5;

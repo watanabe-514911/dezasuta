@@ -45,9 +45,6 @@
   max-width: 315px;
   margin: 30px 20px;
 }
-.circle {
-  position: absolute;
-}
 .objname {
   position: absolute;
   top: -20px;
@@ -110,10 +107,11 @@
   position: relative;
   margin: 60px 0 30px;
 }
-.objdesign {
+.objdesign,
+.objcoding {
   position: absolute;
-  left: 30px;
-  top: -10px;
+  left: 40px;
+  top: -15px;
 }
 .skills_title P {
   position: relative;
@@ -156,20 +154,36 @@
   .design {
     margin-bottom: 80px;
   }
+  .objdesign,
+  .objcoding {
+    position: absolute;
+    left: 90px;
+    top: -15px;
+  }
 }
 /* 私ってこんな人 */
 .about_list {
   max-width: 500px;
   margin: 0 auto;
 }
-.ttl {
-  margin: 80px 0 0 0;
-  font-size: 23px;
-}
 .about_list_text {
   margin: 15px 0 80px;
   font-size: 15px;
   line-height: 1.86;
+}
+.about_item {
+  position: relative;
+}
+.ttl {
+  position: relative;
+  margin: 80px 0 0 0;
+  font-size: 23px;
+}
+.objlist {
+  position: absolute;
+  top: -30px;
+  left: -40px;
+  z-index: 0;
 }
 @media screen and (max-width: 767px) {
   .about_list {

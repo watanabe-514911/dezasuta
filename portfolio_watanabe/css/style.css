@@ -62,14 +62,24 @@ h2 {
   padding: 0 10px;
   line-height: 2.18;
 }
+.btnmore {
+  position: relative;
+}
 .more {
   display: block;
+  position: relative;
   text-align: center;
   width: 180px;
   margin-left: auto;
   padding: 16px 0;
   border-style: solid;
   border-width: 1px;
+}
+.objmore {
+  position: absolute;
+  width: 130px;
+  top: -40px;
+  left: 130px;
 }
 .sp_about {
   display: none;
@@ -94,18 +104,29 @@ h2 {
     font-size: 16px;
     line-height: 1.75;
   }
+  .btnmore,
+  .btnmessage {
+    position: relative;
+    text-align: center;
+  }
   .more {
     display: inline-block;
+    position: relative;
     margin: 0 auto;
     text-align: center;
-    padding: 5% 15%;
+    padding: 16px 0;
     font-size: 16px;
   }
-
-  /* ワークス */
-  .works h2 {
-    margin-bottom: 85px;
+  .objmore {
+    position: absolute;
+    width: 100px;
+    top: -35px;
+    left: 20px;
   }
+}
+/* ワークス */
+.works h2 {
+  margin-bottom: 85px;
 }
 .works_slider {
   display: flex;
@@ -127,6 +148,25 @@ h2 {
 .message_home:hover {
   opacity: 0.5;
 }
+.btnmessage_home {
+  position: relative;
+}
+.objmessage {
+  position: absolute;
+  width: 130px;
+  top: -40px;
+  left: 460px;
+}
+.message_home {
+  display: block;
+  text-align: center;
+  position: relative;
+  margin: 0 auto 130px;
+  padding: 16px 0;
+  width: 200px;
+  border: 1px solid;
+  font-size: 16px;
+}
 .sp {
   display: none;
 }
@@ -139,5 +179,11 @@ h2 {
   }
   .contact p {
     font-size: 16px;
+  }
+  .objmessage {
+    position: absolute;
+    width: 100px;
+    top: -35px;
+    left: 20px;
   }
 }
