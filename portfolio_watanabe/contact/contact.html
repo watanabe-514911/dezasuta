@@ -58,7 +58,9 @@
 
         <div class="form">
             <form
-                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf9Ipa7vV4ahz9yl89QE47ns8F41YKLTJ7hoWLSMEyz7ML4GA/formResponse">
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf9Ipa7vV4ahz9yl89QE47ns8F41YKLTJ7hoWLSMEyz7ML4GA/formResponse"
+                method="post" target="hidden_iframe" onsubmit="submitted=true;">
+
                 <div>
                     <label for="name">お名前（必須）</label>
                     <input id="name" type="text" name="entry.1500624604" required>
@@ -69,8 +71,7 @@
                 </div>
                 <div>
                     <label for="msg">メッセージ</label>
-                    <textarea id="msg" name="entry.489551247" maxlength="2000"
-                        onclick="location.href='./thanks.html'"></textarea>
+                    <textarea id="msg" name="entry.489551247" maxlength="2000"></textarea>
                 </div>
                 <p>
                     送信内容の確認画面はありません。<br>
@@ -78,6 +79,11 @@
                 </p>
                 <button class="contact_message" type="submit">送信する</button>
 
+                <script type="text/javascript">
+                    var submitted = false;
+                </script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+                    onload="if(submitted)  {window.location='thanks.html';}"></iframe>
             </form>
 
         </div>

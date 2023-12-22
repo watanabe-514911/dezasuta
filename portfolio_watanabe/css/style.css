@@ -20,21 +20,87 @@
 #sp_home {
   display: none;
 }
+.scrolldown1 {
+  /*描画位置※位置は適宜調整してください*/
+  position: absolute;
+  left: 50%;
+  bottom: -40px;
+  /*全体の高さ*/
+  height: 50px;
+}
+
+/*Scrollテキストの描写*/
+.scrolldown1 span {
+  /*描画位置*/
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  /*テキストの形状*/
+  color: #333;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  /*縦書き設定*/
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+
+/* 線の描写 */
+.scrolldown1::after {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  top: 0;
+  /*線の形状*/
+  width: 1px;
+  height: 80px;
+  background: #333;
+  /*線の動き1.4秒かけて動く。永遠にループ*/
+  animation: pathmove 1.4s ease-in-out infinite;
+  opacity: 0;
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+  30% {
+    height: 60px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    top: 100px;
+    opacity: 0;
+  }
+}
 @media screen and (max-width: 767px) {
   #home {
     display: none;
   }
   #sp_home {
     display: block;
+    position: relative;
     margin: 0 auto;
     width: 100%;
   }
-  #sp_home p {
+  .sp_name {
+    position: relative;
     max-width: 315px;
+    width: 100%;
     margin: 30px auto;
-    font-family: "Lato", sans-serif;
-    font-size: 45px;
-    font-weight: 200;
+  }
+
+  .scrolldown1 {
+    /*描画位置※位置は適宜調整してください*/
+    position: absolute;
+    left: 50%;
+    bottom: -85px;
+    /*全体の高さ*/
+    height: 50px;
   }
 }
 
@@ -49,17 +115,16 @@ h2 {
 .about {
   display: flex;
   justify-content: space-between;
-  max-width: 920px;
+  max-width: 1000px;
   margin: 300px auto;
 }
 .about_wrap {
-  max-width: 450px;
+  max-width: 500px;
   margin-left: 20px;
   font-size: 16px;
 }
 .about_wrap p {
   margin: 60px auto;
-  padding: 0 10px;
   line-height: 2.18;
 }
 .btnmore {
@@ -81,6 +146,9 @@ h2 {
   top: -40px;
   left: 130px;
 }
+.about_pic {
+  margin-left: 20px;
+}
 .sp_about {
   display: none;
 }
@@ -101,11 +169,11 @@ h2 {
   .sp_about p {
     margin: 50px 0 60px;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.75;
   }
   .btnmore,
-  .btnmessage {
+  .btnmessage_home {
     position: relative;
     text-align: center;
   }
@@ -151,21 +219,20 @@ h2 {
 .btnmessage_home {
   position: relative;
 }
-.objmessage {
-  position: absolute;
-  width: 130px;
-  top: -40px;
-  left: 460px;
-}
 .message_home {
   display: block;
-  text-align: center;
-  position: relative;
   margin: 0 auto 130px;
+  position: relative;
   padding: 16px 0;
   width: 200px;
   border: 1px solid;
   font-size: 16px;
+}
+.objmessage {
+  position: absolute;
+  width: 130px;
+  top: -40px;
+  left: 320px;
 }
 .sp {
   display: none;
@@ -178,7 +245,7 @@ h2 {
     max-width: 315px;
   }
   .contact p {
-    font-size: 16px;
+    font-size: 14px;
   }
   .objmessage {
     position: absolute;

@@ -17,6 +17,7 @@
     <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- slick読み込み.JQeryの後に入れる -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -45,12 +46,15 @@
     <main>
         <div id="home" class="home_img">
             <p>Chiai<br>Watanabe<br>Portfolio</p>
+            <div class="scrolldown1"><span>Scroll</span></div>
         </div>
 
         <div id="sp_home">
             <div><img src="images/FV@2x.jpg" alt="花束を持った女性の写真"></div>
-            <p>Chiai<br>Watanabe<br>Portfolio</p>
+            <div class="sp_name"><img src="images/sp_name@2x.jpg" alt="名前"></div>
+            <div class="scrolldown1"><span>Scroll</span></div>
         </div>
+
 
         <section class="about">
             <div class="about_wrap">
@@ -62,11 +66,11 @@
 
                 </p>
                 <div class="btnmore">
-                    <img class="objmore" src="images/more.png" alt="花束">
+                    <img class="objmore fade-in" src="images/more.png" alt="花束">
                     <a class="more" href="./about/index.html">もっと見る</a>
                 </div>
             </div>
-            <div><img src="images/home_aboutpic.jpg" alt="花束を持った写真"></div>
+            <div class="about_pic"><img src="images/home_aboutpic.jpg" alt="花束を持った写真"></div>
         </section>
 
         <section class="sp_about">
@@ -78,7 +82,7 @@
                 私はデザインで、<br>あなたの想いに彩りをプラスします。
             </p>
             <div class="btnmore">
-                <img class="objmore" src="images/more.png" alt="花束">
+                <img class="objmore fade-in" src="images/more.png" alt="花束">
                 <div class="more"><a href="./about/index.html">もっと見る</a></div>
             </div>
         </section>
@@ -102,13 +106,16 @@
             <p>「制作に関するお問合せ」から<br class="sp">「お友達になりませんか？」のご挨拶まで<br>
                 ポジティブな内容でしたら<br>
                 どんなメッセージもお待ちしております。</p>
+
+            <div class="btnmessage_home">
+                <img class="objmessage fade-in" src="images/message.png" alt="花束">
+                <a class="message_home" href="./contact/contact.html">メッセージを送る</a>
+            </div>
         </section>
 
+
         <!-- 共通 -->
-        <div class="btnmessage_home">
-            <img class="objmessage" src="images/message.png" alt="花束">
-            <a class="message_home" href="./contact/contact.html">メッセージを送る</a>
-        </div>
+
 
         <div class="totop"><a href="#header">Top</a></div>
 

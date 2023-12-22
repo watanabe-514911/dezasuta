@@ -17,6 +17,7 @@
     <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- slick読み込み.JQeryの後に入れる -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/script.js"></script>
 </head>
 
 <body>
@@ -65,23 +66,26 @@
             <li><span>制作期間</span><span>約2週間</span></li>
         </ul>
 
-        <p class="heading">コンセプトと制作のポイント</p>
-        <p class="works_text">
-            新商品告知のためのバナー。<br>
-            サイト誘導と来店促進が目的。<br>
-            ABテストをするため、高級verとPOPverの2種類を作成。<br>
-            <br>
-            <br>
-            <span>高級ver.</span><br>
-            ターゲットは20代～30代の男性。<br>
-            背景に黒のサテン生地を使用して高級感を出し、「激」を目立たせることで直感でいつもよりワンランク上であることがわかるようにした。<br>
-            目線の動きを考慮し情報を配置した。<br>
-            <br>
-            <span>POPver.</span><br>
-            ハンバーガーを連想する色を使用し、下部帯の色を暗くすることで高級感を演出した。<br>
-            背景にグラデーションを使用し立体感を出した。<br>
-            「平日限定」を目を引く赤にし、傾きを加えることで全体の重さを軽減した。<br>
-        </p>
+        <div class="concept">
+            <img class="fade-in" src="images/works_burger.png" alt="背景">
+            <p class="heading">コンセプトと制作のポイント</p>
+            <p class="works_text">
+                新商品告知のためのバナー。<br>
+                サイト誘導と来店促進が目的。<br>
+                ABテストをするため、高級verとPOPverの2種類を作成。<br>
+                <br>
+                <br>
+                <span>高級ver.</span><br>
+                ターゲットは20代～30代の男性。<br>
+                背景に黒のサテン生地を使用して高級感を出し、「激」を目立たせることで直感でいつもよりワンランク上であることがわかるようにした。<br>
+                目線の動きを考慮し情報を配置した。<br>
+                <br>
+                <span>POPver.</span><br>
+                ハンバーガーを連想する色を使用し、下部帯の色を暗くすることで高級感を演出した。<br>
+                背景にグラデーションを使用し立体感を出した。<br>
+                「平日限定」を目を引く赤にし、傾きを加えることで全体の重さを軽減した。<br>
+            </p>
+        </div>
         <div class="column">
             <div><img src="images/burger_richi.jpg" alt="ハンバーガーバナー"></div>
             <div><img src="images/burger_pop.jpg" alt="ハンバーガーバナー"> </div>
@@ -90,7 +94,10 @@
 
         <!-- 共通 -->
 
-        <a class="back" href="./index.html">一覧に戻る</a>
+        <div class="btnback">
+            <img class="fade-in" src="images/back.png" alt="花束">
+            <a class="back" href="./index.html">一覧に戻る</a>
+        </div>
 
         <div class="totop"><a href="#header">Top</a></div>
     </main>

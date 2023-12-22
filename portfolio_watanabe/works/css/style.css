@@ -426,10 +426,19 @@
   justify-content: center;
   margin-bottom: 260px;
 }
+.concept {
+  position: relative;
+}
+.fade-in {
+  position: absolute;
+  top: -50px;
+  left: 420px;
+}
 .heading {
-  font-size: 18px;
+  position: relative;
   max-width: 500px;
   margin: 0 auto 40px;
+  font-size: 18px;
 }
 .works_text {
   max-width: 500px;
@@ -559,6 +568,6 @@
 }
 .btnback img {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: -40px;
+  left: 530px;
 }

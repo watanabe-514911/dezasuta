@@ -23,6 +23,8 @@ input[type="text"],
 input[type="email"],
 textarea {
   border: 1px solid #707070;
+  padding: 10px 20px;
+  box-sizing: border-box;
 }
 input[type="text"],
 input[type="email"] {
