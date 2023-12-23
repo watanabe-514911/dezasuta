@@ -268,12 +268,13 @@ footer {
   display: flex;
   justify-content: space-between;
   max-width: 1000px;
-  margin: 140px;
+  margin: 140px auto;
 }
 .footer_nav ul {
   display: flex;
 }
 .footer_nav ul li {
+  margin-left: 20px;
   padding-right: 65px;
   font-size: 15px;
 }
@@ -281,6 +282,7 @@ footer {
   opacity: 0.5;
 }
 .copyright {
+  margin-right: 20px;
   font-size: 12px;
 }
 @media screen and (max-width: 767px) {
@@ -297,10 +299,12 @@ footer {
     display: block;
   }
   .footer_nav ul li {
-    line-height: 3;
+    margin-left: 0;
     padding: 0;
+    line-height: 3;
   }
   .copyright {
     margin-top: 50px;
+    margin-right: 0;
   }
 }

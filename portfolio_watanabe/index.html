@@ -90,14 +90,14 @@
 
         <section class="works">
             <h2>Works</h2>
-            <div class="works_slider">
-                <div><img src="images/mockup_burger.png" alt="ハンバーガーバナー"></div>
-                <div><img src="images/mockup_salon.png" alt="美容室LP"></div>
-                <div><img src="images/mockup_newapp.png" alt="アプリバナー"></div>
-                <div><img src="images/mockup_skincare.png" alt="基礎化粧品LP"></div>
-                <div><img src="images/mockup_springsale.png" alt="携帯バナー"></div>
-                <div><img src="images/mockup_workers.png" alt="コワーキングスペースLP"></div>
-                <div><img src="images/mockup_cafe.png" alt="カフェLP"></div>
+            <div class="slider">
+                <div><img src="images/slider_springsale.jpg" alt="携帯バナー"></div>
+                <div><img src="images/slider_newapp.jpg" alt="アプリバナー"></div>
+                <div><img src="images/slider_burger.jpg" alt="ハンバーガーバナー"></div>
+                <div><img src="images/slider_workers.jpg" alt="コワーキングスペースLP"></div>
+                <div><img src="images/slider_salon.jpg" alt="美容室LP"></div>
+                <div><img src="images/slider_skincare.jpg" alt="基礎化粧品LP"></div>
+                <div><img src="images/slider_cafe.jpg" alt="カフェLP"></div>
             </div>
         </section>
 
@@ -143,11 +143,25 @@
                 $('.sp_btn').toggleClass('open')
             });
         });
+
+        $('.slider').slick({
+            autoplay: true,//自動的に動き出すか。初期値はfalse。
+            infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+            speed: 500,//スライドのスピード。初期値は300。
+            slidesToShow: 3,//スライドを画面に3枚見せる
+            slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
+            prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+            nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+            centerMode: true,//要素を中央ぞろえにする
+            variableWidth: true,//幅の違う画像の高さを揃えて表示
+            dots: true,//下部ドットナビゲーションの表示
+        });
     </script>
 
-
-
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
