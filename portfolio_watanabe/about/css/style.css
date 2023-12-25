@@ -55,7 +55,7 @@
   font-size: 23px;
 }
 .about_text {
-  width: 50%;
+  max-width: 500px;
   top: 70px;
   margin-left: 20px;
   font-size: 15px;
