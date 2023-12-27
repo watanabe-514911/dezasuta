@@ -1,13 +1,16 @@
 #about {
   position: relative;
-  background-image: url(../images/about.jpg);
-  height: 450px;
+}
+#about img {
+  position: relative;
+  width: 100%;
 }
 .about {
   margin: 0 20px;
 }
 #sp_about {
   display: none;
+  position: relative;
 }
 @media screen and (max-width: 767px) {
   #about {
@@ -23,7 +26,7 @@
   text-align: center;
   margin: 300px 0 100px;
 }
-.about_heading h2 {
+.about_heading h3 {
   display: inline-block;
   padding: 0 20px 10px;
   font-size: 35px;
@@ -55,14 +58,14 @@
   font-size: 23px;
 }
 .about_text {
-  max-width: 500px;
+  width: 500px;
   top: 70px;
   margin-left: 20px;
   font-size: 15px;
   line-height: 1.86;
 }
 @media screen and (max-width: 767px) {
-  .about_heading h2 {
+  .about_heading h3 {
     font-size: 22px;
   }
   .about_heading {
@@ -88,7 +91,7 @@
   }
   .objname {
     position: absolute;
-    top: -30px;
+    top: -50px;
     left: -40px;
   }
 }

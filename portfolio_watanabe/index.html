@@ -63,7 +63,7 @@
 
         <section class="about">
             <div class="about_wrap">
-                <h2>About</h2>
+                <h3>About</h3>
                 <p>
                     「あなたの想いにデザインで彩りを添える」<br>
                     彩りとは、おもしろみや風情、華やかさを付け加えること。<br>
@@ -79,7 +79,7 @@
         </section>
 
         <section class="sp_about">
-            <h2>About</h2>
+            <h3>About</h3>
             <div><img src="images/about@2x.jpg" alt="花束を持った写真"></div>
             <p>
                 「あなたの想いにデザインで彩りを添える」<br>
@@ -94,20 +94,20 @@
 
 
         <section class="works">
-            <h2>Works</h2>
+            <h3>Works</h3>
             <div class="slider">
-                <div><img src="images/slider_springsale.jpg" alt="携帯バナー"></div>
-                <div><img src="images/slider_newapp.jpg" alt="アプリバナー"></div>
-                <div><img src="images/slider_burger.jpg" alt="ハンバーガーバナー"></div>
-                <div><img src="images/slider_workers.jpg" alt="コワーキングスペースLP"></div>
-                <div><img src="images/slider_salon.jpg" alt="美容室LP"></div>
-                <div><img src="images/slider_skincare.jpg" alt="基礎化粧品LP"></div>
-                <div><img src="images/slider_cafe.jpg" alt="カフェLP"></div>
+                <div><a href="./works/work01.html"><img src="images/slider_springsale.jpg" alt="携帯バナー"></a></div>
+                <div><a href="./works/work02.html"><img src="images/slider_newapp.jpg" alt="アプリバナー"></a></div>
+                <div><a href="./works/work03.html"><img src="images/slider_burger.jpg" alt="ハンバーガーバナー"></a></div>
+                <div><a href="./works/work04.html"><img src="images/slider_workers.jpg" alt="コワーキングスペースLP"></a></div>
+                <div><a href="./works/work05.html"><img src="images/slider_salon.jpg" alt="美容室LP"></a></div>
+                <div><a href="./works/work06.html"><img src="images/slider_skincare.jpg" alt="基礎化粧品LP"></a></div>
+                <div><a href="./works/work07.html"><img src="images/slider_cafe.jpg" alt="カフェLP"></a></div>
             </div>
         </section>
 
         <section class="contact">
-            <h2>Contact</h2>
+            <h3>Contact</h3>
             <p>「制作に関するお問合せ」から<br class="sp">「お友達になりませんか？」のご挨拶まで<br>
                 ポジティブな内容でしたら<br>
                 どんなメッセージもお待ちしております。</p>
@@ -155,12 +155,12 @@
                 text: {//テキストの形状を直接指定       
                     style: {//天地中央に配置
                         position: 'absolute',
-                        left: '50%',
+                        left: '51%',
                         top: '100%',
                         padding: '0',
                         margin: '-30px 0 0 0',//バーより上に配置
                         transform: 'translate(-50%,-50%)',
-                        'font-size': '1rem',
+                        'font-size': '18px',
                         color: '#333',
                     },
                     autoStyleContainer: false //自動付与のスタイルを切る
@@ -170,10 +170,27 @@
                 }
             });
 
-            //アニメーションスタート
-            bar.animate(1.0, function () {//バーを描画する割合を指定します 1.0 なら100%まで描画します
-                $("#splash").delay(500).fadeOut(800);//アニメーションが終わったら#splashエリアをフェードアウト
-            });
+            var webStorage = function () {
+                if (sessionStorage.getItem('access')) {
+                    /*
+                      2回目以降アクセス時の処理
+                    */
+
+                } else {
+                    /*
+                      初回アクセス時の処理
+                    */
+                    sessionStorage.setItem('access', 'true');
+                    $("#splash").show();
+
+                    //アニメーションスタート
+                    bar.animate(1.0, function () {//バーを描画する割合を指定します 1.0 なら100%まで描画します
+                        $("#splash").delay(500).fadeOut(800);//アニメーションが終わったら#splashエリアをフェードアウト
+                    });
+                }
+            }
+            webStorage();
+
             //ここの中に記述
             $('.sp_btn, .sp_nav ul li').on('click', function () {
                 $('.sp_nav').fadeToggle();

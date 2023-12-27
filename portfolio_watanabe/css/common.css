@@ -24,7 +24,7 @@ li {
 
   /*デフォルトの文字色、font-familyを予め当てておく*/
   color: #333;
-  font-family: "yu-gothic-pr6n" "游ゴシック体", YuGothic, "游ゴシック",
+  font-family: "yu-gothic-pr6n", "游ゴシック体", YuGothic, "游ゴシック",
     "Yu Gothic", sans-serif;
 }
 
@@ -218,17 +218,20 @@ main {
 }
 
 /* 見出し画像 */
-.top_img p {
+h2 {
   position: absolute;
-  top: 200px;
-  left: 28%;
+  top: 50%;
+  left: calc(50% - 200px);
+  transform: translate(-50%, -50%);
+  font-family: "Lato", sans-serif;
   font-size: 55px;
   font-weight: 200;
-  font-family: "Lato", sans-serif;
 }
-.top_img {
-  background-size: cover;
-  background-position: center;
+@media screen and (max-width: 767px) {
+  h2 {
+    left: calc(50% - 80px);
+    font-size: 40px;
+  }
 }
 
 /* フッターらへん */
@@ -247,8 +250,9 @@ main {
 }
 .btnmessage img {
   position: absolute;
-  top: -40px;
-  left: 490px;
+  top: 50%;
+  left: calc(50% - 100px);
+  transform: translate(-50%, -50%);
 }
 .message:hover {
   opacity: 0.5;

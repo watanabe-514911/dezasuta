@@ -1,14 +1,16 @@
 #works {
   position: relative;
-  background-image: url(../images/works.jpg);
-  height: 450px;
 }
-
+#works img {
+  position: relative;
+  width: 100%;
+}
 .works_pic {
   margin-bottom: 200px;
 }
 #sp_works {
   display: none;
+  position: relative;
 }
 @media screen and (max-width: 767px) {
   #works {
@@ -245,6 +247,7 @@
     left: 50%;
   }
   .sp_springsale a {
+    text-align: center;
     z-index: 1;
   }
   .sp_newapp img {
@@ -267,6 +270,7 @@
     left: 50%;
   }
   .sp_newapp a {
+    text-align: center;
     z-index: 1;
   }
   .sp_burger img {
@@ -289,6 +293,7 @@
     left: 50%;
   }
   .sp_burger a {
+    text-align: center;
     z-index: 1;
   }
   .sp_workers img {
@@ -311,6 +316,7 @@
     left: 50%;
   }
   .sp_workers a {
+    text-align: center;
     z-index: 1;
   }
   .sp_salon img {
@@ -333,6 +339,7 @@
     left: 50%;
   }
   .sp_salon a {
+    text-align: center;
     z-index: 1;
   }
   .sp_skincare img {
@@ -355,6 +362,7 @@
     left: 50%;
   }
   .sp_skincare a {
+    text-align: center;
     z-index: 1;
   }
   .sp_cafe img {
@@ -377,6 +385,7 @@
     left: 50%;
   }
   .sp_cafe a {
+    text-align: center;
     z-index: 1;
   }
 }
@@ -429,10 +438,11 @@
 .concept {
   position: relative;
 }
-.fade-in {
+.conceptpoint {
   position: absolute;
-  top: -50px;
-  left: 420px;
+  top: 0;
+  left: calc(50% - 255px);
+  transform: translate(-50%, -50%);
 }
 .heading {
   position: relative;
@@ -484,6 +494,11 @@
   }
   .heading {
     max-width: 315px;
+  }
+  .conceptpoint {
+    top: 2%;
+    left: calc(50% - 155px);
+    width: 50px;
   }
   .works_text {
     max-width: 315px;
@@ -568,6 +583,7 @@
 }
 .btnback img {
   position: absolute;
-  top: -40px;
-  left: 530px;
+  top: 50%;
+  left: calc(50% - 100px);
+  transform: translate(-50%, -50%);
 }

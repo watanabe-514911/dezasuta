@@ -1,15 +1,31 @@
 #contact {
   position: relative;
-  background-image: url(../images/contact.jpg);
-  height: 450px;
+}
+#contact img {
+  position: relative;
+  width: 100%;
+}
+#sp_contact {
+  display: none;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  #contact {
+    display: none;
+  }
+  #sp_contact {
+    display: block;
+    width: 100%;
+  }
 }
 .contact_wrap {
   position: relative;
 }
 .contact_wrap img {
   position: absolute;
-  top: -35%;
-  left: 38%;
+  top: 0;
+  left: calc(50% - 150px);
+  transform: translate(-50%, -50%);
 }
 .contact_text {
   position: relative;
@@ -58,15 +74,19 @@ textarea {
 .contact_message {
   display: block;
   text-align: center;
-  margin: 40px auto 130px;
+  margin: 80px auto 130px;
   padding: 15px 50px;
-  background-color: #fff;
+  background-color: transparent;
   font-size: 16px;
   color: #333333;
   border-width: 1px;
+  z-index: 2;
 }
 .contact_message:hover {
   cursor: pointer;
+}
+.btnmessage img {
+  z-index: 1;
 }
 
 /* 送信後ページ */
