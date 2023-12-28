@@ -50,8 +50,9 @@
 }
 .objname {
   position: absolute;
-  top: -20px;
-  left: -40px;
+  top: -170%;
+  left: calc(-30% + 20px);
+  transform: translate(50%, 50%);
 }
 .myname {
   position: relative;
@@ -82,6 +83,9 @@
   .name {
     margin: 10px 0;
   }
+  .myname {
+    font-size: 20px;
+  }
   .aboutme_wrap {
     margin: 0 auto;
   }
@@ -90,9 +94,9 @@
     margin: 0;
   }
   .objname {
-    position: absolute;
-    top: -50px;
-    left: -40px;
+    top: -140%;
+    left: calc(-25% + 30px);
+    width: 60px;
   }
 }
 
@@ -202,5 +206,10 @@
   }
   .about_list_text {
     margin: 20px 0 60px;
+  }
+  .objlist {
+    top: -15px;
+    left: -15px;
+    width: 55px;
   }
 }
