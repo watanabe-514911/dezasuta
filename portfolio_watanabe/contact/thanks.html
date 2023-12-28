@@ -69,33 +69,34 @@
 
 
         <!-- 共通 -->
-
-        <div class="totop"><a href="../index.html">Home</a></div>
-
-        <footer>
-            <nav class="footer_nav">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../about/index.html">About</a></li>
-                    <li><a href="../works/index.html">Works</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <p class="copyright">
-                <small>©ChiaiWatanabe All rights reserved.</small>
-            </p>
-        </footer>
-
-        <script>
-            $(function () {
-                //ここの中に記述
-                $('.sp_btn, .sp_nav ul li').on('click', function () {
-                    $('.sp_nav').fadeToggle();
-                    $('.sp_btn').toggleClass('open')
-                });
-            });
-        </script>
+        <div class="totop_wrap">
+            <div class="totop"><a href="../index.html">Home</a></div>
+        </div>
     </main>
+
+    <footer>
+        <nav class="footer_nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="../works/index.html">Works</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">
+            <small>©ChiaiWatanabe All rights reserved.</small>
+        </p>
+    </footer>
+
+    <script>
+        $(function () {
+            //ここの中に記述
+            $('.sp_btn, .sp_nav ul li').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open')
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -35,21 +35,15 @@
 
 #home {
   position: relative;
-  background-image: url(../images/FV.jpg);
-  height: 698px;
 }
-.home_img {
-  background-size: cover;
-  background-position: center;
+#home img {
+  position: relative;
+  width: 100%;
 }
-.home_img p {
-  position: absolute;
-  top: 240px;
-  left: 60%;
-  font-family: "Lato", sans-serif;
-  font-size: 70px;
-  font-weight: 200;
+h2 {
+  left: calc(50% + 20%);
 }
+
 #sp_home {
   display: none;
 }
@@ -154,10 +148,10 @@ h3 {
 .about_wrap {
   max-width: 500px;
   margin-left: 20px;
-  font-size: 16px;
 }
 .about_wrap p {
   margin: 60px auto;
+  font-size: 16px;
   line-height: 2.18;
 }
 .btnmore {
@@ -321,13 +315,14 @@ h3 {
 .message_home:hover {
   opacity: 0.5;
 }
-.btnmessage_home {
+/* .btnmessage_home {
   position: relative;
-}
+} */
 .message_home {
   display: block;
-  margin: 0 auto 130px;
+
   position: relative;
+  margin: 0 auto 130px;
   padding: 16px 0;
   width: 200px;
   border: 1px solid;
@@ -335,9 +330,9 @@ h3 {
 }
 .objmessage {
   position: absolute;
-  width: 130px;
-  top: -40px;
-  left: 320px;
+  top: 50%;
+  left: calc(50% - 100px);
+  transform: translate(-50%, -50%);
 }
 .sp {
   display: none;

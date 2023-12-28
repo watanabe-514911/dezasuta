@@ -96,7 +96,7 @@ textarea {
 }
 .thanks_text {
   text-align: center;
-  margin-bottom: 120px;
+  margin: 120px;
   font-size: 15px;
   line-height: 2;
 }
@@ -124,7 +124,10 @@ textarea {
   }
   .thanks_text {
     max-width: 315px;
-    margin: 0 auto 120px;
+    margin: 60px auto;
     font-size: 14px;
+  }
+  .totop_wrap {
+    display: none;
   }
 }
