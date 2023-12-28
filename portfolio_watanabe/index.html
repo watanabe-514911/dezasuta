@@ -120,9 +120,9 @@
 
 
         <!-- 共通 -->
-
-
-        <div class="totop"><a href="#header">Top</a></div>
+        <div class="totop_wrap">
+            <div class="totop"><a href="#header">Top</a></div>
+        </div>
 
 
     </main>
@@ -172,14 +172,9 @@
 
             var webStorage = function () {
                 if (sessionStorage.getItem('access')) {
-                    /*
-                      2回目以降アクセス時の処理
-                    */
-
+                    /*2回目以降アクセス時の処理*/
                 } else {
-                    /*
-                      初回アクセス時の処理
-                    */
+                    /*初回アクセス時の処理*/
                     sessionStorage.setItem('access', 'true');
                     $("#splash").show();
 

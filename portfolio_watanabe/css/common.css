@@ -261,12 +261,34 @@ h2 {
   text-align: center;
 }
 .totop a {
-  padding-bottom: 5px;
-  border-bottom: 1px solid #333;
   font-size: 14px;
 }
-.totop:hover {
-  opacity: 0.5;
+/* 最上部へホバーアニメーション */
+.totop_wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 22px;
+  height: 15px;
+}
+.totop {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.totop a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #333;
+  transition: all 0.3s;
+  transform: scale(0, 1);
+  transform-origin: left top;
+}
+.totop a:hover::after {
+  transform: scale(1, 1);
 }
 footer {
   display: flex;
@@ -278,12 +300,27 @@ footer {
   display: flex;
 }
 .footer_nav ul li {
-  margin-left: 20px;
-  padding-right: 65px;
+  padding-right: 55px;
   font-size: 15px;
 }
-.footer_nav a:hover {
-  opacity: 0.5;
+/* フッターホバーアニメーション */
+.footer_nav ul li a {
+  position: relative;
+}
+.footer_nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #333;
+  transition: all 0.3s;
+  transform: scale(0, 1);
+  transform-origin: left top;
+}
+.footer_nav ul li a:hover::after {
+  transform: scale(1, 1);
 }
 .copyright {
   margin-right: 20px;
