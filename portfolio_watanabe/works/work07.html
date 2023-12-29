@@ -93,7 +93,10 @@
             <a class="back" href="./index.html">一覧に戻る</a>
         </div>
 
-        <div class="totop"><a href="#header">Top</a></div>
+        <div class="totop_wrap">
+            <div class="totop"><a href="#header">Top</a></div>
+        </div>
+
     </main>
     <footer>
         <nav class="footer_nav">
@@ -130,6 +133,7 @@
                 $(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し
                 $(findElm).slideDown(500);//アコーディオンを開く
             }
+            $('.box').parent().toggleClass('is-wide');
         });
     </script>
 </body>
